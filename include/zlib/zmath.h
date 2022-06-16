@@ -1,0 +1,78 @@
+/*
+** EPITECH PROJECT, 2022
+** zlib
+** File description:
+** math functions - header
+*/
+
+#ifndef ZMATH_H_
+    #define ZMATH_H_
+
+    #include <zlib/zctype.h>
+
+    ////////////////////////////////////////////////////////////
+    /// \def ZPI
+    ////////////////////////////////////////////////////////////
+    #define ZPI 3.14159265358979323846
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Get the absolute value of a number
+    ///
+    /// \param value The number to get the absolute value of
+    ///
+    /// \return The absolute value of the number
+    ///
+    ////////////////////////////////////////////////////////////
+    int zabs(int value);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Check if a number is prime
+    ///
+    /// \param nbr number to check
+    ///
+    /// \return true if the number is prime, false otherwise
+    ///
+    ////////////////////////////////////////////////////////////
+    bool zis_prime(int nbr);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Get a number at a given power recursively
+    ///
+    /// \param nb number
+    /// \param power power
+    ///
+    /// \return Number at power given
+    ///
+    ////////////////////////////////////////////////////////////
+    int zpower(int nbr, int p);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Get the first superior prime number
+    ///
+    /// \param nb number to check
+    ///
+    /// \return First prime number superior to the argument
+    ///
+    ////////////////////////////////////////////////////////////
+    int zprime_sup(int nbr);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Get the square root of an int
+    ///
+    /// \param nbr number to check
+    ///
+    /// \return Square root of the argument
+    ///
+    ////////////////////////////////////////////////////////////
+    uint zsqrt(int nbr);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Swap two int
+    ///
+    /// \param a  first int
+    /// \param b  second int
+    ///
+    ////////////////////////////////////////////////////////////
+    void zswap(int *a, int *b);
+
+#endif /* !ZMATH_H_ */
