@@ -38,6 +38,13 @@ SRC += 	src/mem/zcalloc.c \
 		src/mem/zfree.c \
 		src/mem/zrealloc.c
 
+SRC	+=	src/printf/zprintf.c \
+		src/printf/print_base.c \
+		src/printf/print_special.c \
+		src/printf/print.c \
+		src/printf/put_in_octal.c \
+		src/printf/flags.c \
+
 SRC += 	src/string/zatoi.c \
 		src/string/zchar_in.c \
 		src/string/zcount_occur.c \
@@ -59,10 +66,12 @@ SRC += 	src/string/zatoi.c \
 		src/string/zstrstr.c
 
 SRC +=  src/write/zperror.c \
+		src/write/zputbase.c \
 		src/write/zputchar.c \
 		src/write/zputlong.c \
 		src/write/zputnbr.c \
 		src/write/zputstr.c \
+		src/write/zputuns.c \
 		src/write/zwrite.c
 
 OBJ = $(SRC:.c=.o)

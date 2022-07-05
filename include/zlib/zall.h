@@ -12,7 +12,7 @@
     #include "zctype.h"
     #include "zmath.h"
     #include "zmem.h"
-    // #include "zprintf.h"
+    #include "zprintf.h"
     #include "zstring.h"
     #include "zwrite.h"
 
