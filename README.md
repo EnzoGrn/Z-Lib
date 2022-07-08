@@ -11,10 +11,15 @@ Cette librairie contient toutes les fonctions que j'ai développé au cours de m
   - zprintarr : affiche un char **
   - zstr_to_array : créé un char ** à partir d'un char *[^2], avec un séparateur défini
 - Ctype :  dossier de fonctions vérifiant le type d'un char[^3], un int[^4] ou d'un char *
+  - zisalpha : vérifie si un char est une lettre
   - zisacsii : vérifie si un char est un caractère ascii
+  - zislower : vérifie si un char est une minuscule
   - zisneg : vérifie si un int est négatif
+  - zisnum : vérifie si un char est un chiffre
+  - zisprintable : vérifie si un char est un caractère affichable
   - zissign : vérifie si un char est un signe '+' ou '-'
   - zisspace : vérifie si un char est un espace
+  - zisupper : vérifie si un char est une majuscule
   - zstrisalpha : vérifie si un char * contient que des caractères alphabétiques
   - zstrisalphanum : vérifie si un char * contient que des caractères alphanumériques
   - zstrislower : vérifie si un char * contient que des caractères alphabétiques en miniscule
@@ -22,6 +27,7 @@ Cette librairie contient toutes les fonctions que j'ai développé au cours de m
   - zstrisprintable : vérifie si un char est un caractère ascii
   - zstrisupper : vérifie si un char * contient que des caractères alphabétiques en majuscule
   - zstristolower : convertit les caractères d'un char * en miniscule
+  - zstristoupper : convertit les caractères d'un char * en majuscule
   - ztolower : convertit un char en miniscule
   - ztoupper : convertit un char en majuscule
 - Maths :  dossier de fonctions mathématiques
