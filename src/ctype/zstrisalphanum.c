@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2022
 ** zlib
 ** File description:
-** ctype function - is_alpha_num
+** ctype function - strisalphanum
 */
 
 #include <zlib/zctype.h>

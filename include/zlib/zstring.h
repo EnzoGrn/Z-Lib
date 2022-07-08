@@ -33,18 +33,6 @@
     bool zchar_in(char *str, char c);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Fill memory with a constant byte
-    ///
-    /// \param s Memory need to fill
-    /// \param c Byte uses to fill
-    /// \param n Number of byte need to fill
-    ///
-    /// \return The string fill with byte c
-    ///
-    ////////////////////////////////////////////////////////////
-    void *zmemset(void *s, int c, ulong size);
-
-    ////////////////////////////////////////////////////////////
     /// \brief Check if a string contain a specific char
     ///
     /// \param str String to check
@@ -207,7 +195,6 @@
 
 // ulong ostrlensep(char const *str, char const separator);
 
-void *zmemcpy(void *dest, const void *src, ulong size);
 
 // bool ostr_end_with(char const *src, char const *end);
 

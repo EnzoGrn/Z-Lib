@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2022
 ** zlib
 ** File description:
-** ctype function - isalpha
+** ctype function - strisalpha
 */
 
 #include <zlib/zctype.h>
@@ -11,7 +11,7 @@
 bool zstrisalpha(char const *s)
 {
     for (ulong i = 0; i < zstrlen(s); i++) {
-        if (s[i] < 'A' || ('Z' < s[i] && s[i] < 'a') || 'z' < s[i])
+        if (!zisalpha(s[i]))
             return false;
     }
     return true;

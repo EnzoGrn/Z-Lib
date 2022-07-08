@@ -2,15 +2,15 @@
 ** EPITECH PROJECT, 2022
 ** zlib
 ** File description:
-** ctype function - strtolower
+** ctype function - strtoupper
 */
 
 #include <zlib/zstring.h>
 
-char *zstrtolower(char *str)
+char *zstrtoupper(char *str)
 {
     for (ulong i = 0; i < zstrlen(str); i++) {
-        str[i] = ztolower(str[i]);
+        str[i] = ztoupper(str[i]);
     }
     return str;
 }

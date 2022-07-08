@@ -11,10 +11,15 @@ SRC += 	src/array/zarrdup.c \
 		src/array/zprintarr.c \
 		src/array/zstr_to_array.c
 
-SRC =   src/ctype/zisascii.c \
+SRC =   src/ctype/zisalpha.c \
+		src/ctype/zisascii.c \
+		src/ctype/zislower.c \
 		src/ctype/zisneg.c \
+		src/ctype/zisnum.c \
+		src/ctype/zisprintable.c \
 		src/ctype/zissign.c \
 		src/ctype/zisspace.c \
+		src/ctype/zisupper.c \
 		src/ctype/zstrisalpha.c \
 		src/ctype/zstrisalphanum.c \
 		src/ctype/zstrislower.c \
@@ -22,6 +27,7 @@ SRC =   src/ctype/zisascii.c \
 		src/ctype/zstrisprintable.c \
 		src/ctype/zstrisupper.c \
 		src/ctype/zstrtolower.c \
+		src/ctype/zstrtoupper.c \
 		src/ctype/ztolower.c \
 		src/ctype/ztoupper.c
 
@@ -36,6 +42,8 @@ SRC += 	src/mem/zcalloc.c \
 		src/mem/zfree_chararr.c \
 		src/mem/zfree_intarr.c \
 		src/mem/zfree.c \
+		src/mem/zmemcpy.c \
+		src/mem/zmemset.c \
 		src/mem/zrealloc.c
 
 SRC	+=	src/printf/zprintf.c \
@@ -49,8 +57,6 @@ SRC += 	src/string/zatoi.c \
 		src/string/zchar_in.c \
 		src/string/zcount_occur.c \
 		src/string/zitoa.c \
-		src/string/zmemcpy.c \
-		src/string/zmemset.c \
 		src/string/zrevstr.c \
 		src/string/zstrcapitalize.c \
 		src/string/zstrcat.c \

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2022
 ** zlib
 ** File description:
-** ctype function - islower
+** ctype function - strislower
 */
 
 #include <zlib/zctype.h>
@@ -11,7 +11,7 @@
 bool zstrislower(char const *str)
 {
     for (ulong i = 0; i < zstrlen(str); i++) {
-        if (str[i] < 'a' || 'z' < str[i])
+        if (!zislower(str[i]))
             return false;
     }
     return true;

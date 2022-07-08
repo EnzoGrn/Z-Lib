@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2022
 ** zlib
 ** File description:
-** ctype function - is_upper
+** ctype function - strisupper
 */
 
 #include <zlib/zctype.h>
@@ -11,7 +11,7 @@
 bool zstrisupper(char const *str)
 {
     for (ulong i = 0; i < zstrlen(str); i++) {
-        if (str[i] < 'A' || 'Z' < str[i])
+        if (!zisupper(str[i]))
             return false;
     }
     return true;

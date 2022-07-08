@@ -46,6 +46,20 @@
     void zfree(void *ptr);
 
     ////////////////////////////////////////////////////////////
+    /// \brief Fill memory with a constant byte
+    ///
+    /// \param s Memory need to fill
+    /// \param c Byte uses to fill
+    /// \param n Number of byte need to fill
+    ///
+    /// \return The string fill with byte c
+    ///
+    ////////////////////////////////////////////////////////////
+    void *zmemset(void *s, int c, ulong size);
+
+void *zmemcpy(void *dest, const void *src, ulong size);
+
+    ////////////////////////////////////////////////////////////
     /// \brief Reallocate the given memory block
     ///
     /// \param ptr Pointer to the memory block to reallocate

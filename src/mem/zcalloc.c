@@ -5,7 +5,7 @@
 ** mem function - calloc
 */
 
-#include <zlib/zstring.h>
+#include <zlib/zmem.h>
 #include <stdlib.h>
 
 void *zcalloc(ulong nmemb, ulong size)

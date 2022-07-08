@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2022
 ** zlib
 ** File description:
-** ctype function - isnum
+** ctype function - strisnum
 */
 
 #include <zlib/zctype.h>
@@ -11,7 +11,7 @@
 bool zstrisnum(char const *str)
 {
     for (ulong i = 0; i < zstrlen(str); i++) {
-        if (str[i] < '0' || '9' < str[i])
+        if (!zisnum(str[i]))
             return false;
     }
     return true;

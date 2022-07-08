@@ -74,6 +74,16 @@
     #define MAX_POSINT 2147483647
 
     ////////////////////////////////////////////////////////////
+    /// \brief Check if a character is alpha
+    ///
+    /// \param c The character to check
+    ///
+    /// \return true if the character is alpha, false otherwise
+    ///
+    ////////////////////////////////////////////////////////////
+    bool zisalpha(char c);
+
+    ////////////////////////////////////////////////////////////
     /// \brief Check if a character is a ascii character
     ///
     /// \param c character to check
@@ -84,6 +94,16 @@
     bool zisascii(int c);
 
     ////////////////////////////////////////////////////////////
+    /// \brief Check if a character is in lowercase
+    ///
+    /// \param c The character to check
+    ///
+    /// \return true if the character is in lowercase, false otherwise
+    ///
+    ////////////////////////////////////////////////////////////
+    bool zislower(char c);
+
+    ////////////////////////////////////////////////////////////
     /// \brief Check if a character is negative
     ///
     /// \param c character to check
@@ -92,6 +112,26 @@
     ///
     ////////////////////////////////////////////////////////////
     bool zisneg(int c);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Check if a character is a digit
+    ///
+    /// \param c character to check
+    ///
+    /// \return true if is a digit, false otherwise
+    ///
+    ////////////////////////////////////////////////////////////
+    bool zisnum(char c);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Check if a character printable
+    ///
+    /// \param c character to check
+    ///
+    /// \return true if is printable, false otherwise
+    ///
+    ////////////////////////////////////////////////////////////
+    bool zisprintable(char str);
 
     ////////////////////////////////////////////////////////////
     /// \brief Check if a character is a sign
@@ -112,6 +152,16 @@
     ///
     ////////////////////////////////////////////////////////////
     bool zisspace(int c);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Check if a character is uppercase
+    ///
+    /// \param c The character to check
+    ///
+    /// \return true if the character is uppercase, false otherwise
+    ///
+    ////////////////////////////////////////////////////////////
+    bool zisupper(char c);
 
     ////////////////////////////////////////////////////////////
     /// \brief Check if a string contain only alphanumeric characters
@@ -181,6 +231,17 @@
     ///
     ////////////////////////////////////////////////////////////
     char *zstrtolower(char *str);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Check if a string contain only lower characters,
+    /// otherwise convert it
+    ///
+    /// \param str String to check
+    ///
+    /// \return The string in upper case
+    ///
+    ////////////////////////////////////////////////////////////
+    char *zstrtoupper(char *str);
 
     ////////////////////////////////////////////////////////////
     /// \brief Check if a character is upper, if true convert it to lower
