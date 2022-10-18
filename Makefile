@@ -5,13 +5,13 @@
 ## Makefile zlib
 ##
 
-SRC += 	src/array/zarrdup.c \
+SRC = 	src/array/zarrdup.c \
 		src/array/zarrealloc.c \
 		src/array/zarrlen.c \
 		src/array/zprintarr.c \
 		src/array/zstr_to_array.c
 
-SRC =   src/ctype/zisalpha.c \
+SRC +=   src/ctype/zisalpha.c \
 		src/ctype/zisascii.c \
 		src/ctype/zislower.c \
 		src/ctype/zisneg.c \
