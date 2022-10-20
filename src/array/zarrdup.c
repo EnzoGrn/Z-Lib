@@ -6,6 +6,8 @@
 */
 
 #include <zlib/zarray.h>
+#include <zlib/zstring.h>
+#include <stdlib.h>
 
 char **zarrdup(char **tab)
 {

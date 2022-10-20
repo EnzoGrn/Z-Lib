@@ -6,6 +6,8 @@
 */
 
 #include <zlib/zarray.h>
+#include <zlib/zwrite.h>
+#include <stdlib.h>
 
 void zprintarr(char **tab)
 {

@@ -6,6 +6,7 @@
 */
 
 #include <zlib/zarray.h>
+#include <stdlib.h>
 
 static char *fill_line(char const *str, int pos, char const separator)
 {
@@ -57,9 +58,9 @@ char **zstr_to_array(char const *str, char const separator)
     if (!str)
         return NULL;
     for (int pos = 0; str[pos] != '\0';) {
-        for (;str[pos] == separator && str[pos] != '\0'; pos++);
+        for (; str[pos] == separator && str[pos] != '\0'; pos++);
         nbr_word += count_word(str, pos, separator);
-        for (;str[pos] != separator && str[pos] != '\0'; pos++);
+        for (; str[pos] != separator && str[pos] != '\0'; pos++);
     }
     return fill_tab(str, separator, nbr_word);
 }

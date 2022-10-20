@@ -57,6 +57,6 @@
     /// \return Array of string
     ///
     ////////////////////////////////////////////////////////////
-    char **zstr_to_array(char *str, char *separators);
+    char **zstr_to_array(char const *str, char const separator);
 
 #endif /* !ZARRAY_H_ */
